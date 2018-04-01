@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 project(JXCore)
 
+set(CMAKE_C_STANDARD 99)
 set(JERRY_LIBC OFF CACHE bool "" FORCE)
 set(JERRY_LIBM OFF CACHE bool "" FORCE)
 set(JERRY_CMDLINE OFF CACHE bool "" FORCE)
