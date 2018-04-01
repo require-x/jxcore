@@ -25,3 +25,7 @@ file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
 add_library(jxcore STATIC ${SRC})
 
 add_dependencies(jxcore jerry-core jerry-ext jerry-port-default)
+
+install(TARGETS jxcore DESTINATION lib)
+install(FILES include/jxcore.h DESTINATION include)
+install(DIRECTORY include/jxcore DESTINATION include/jxcore)

@@ -6,8 +6,8 @@
 #include <jerryscript.h>
 #include <jerryscript-ext/handler.h>
 
-#include <console.h>
-#include <timers.h>
+#include <jxcore/console.h>
+#include <jxcore/timers.h>
 
 void print_string_form(jerry_value_t val) {
   jerry_value_t str_val = jerry_value_to_string (val);
